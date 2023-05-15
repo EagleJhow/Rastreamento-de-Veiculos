@@ -51,11 +51,6 @@ input::placeholder{
     font-size: 14px;
 }
 
-input::placeholder{
-    color: #CBD0F7;
-    font-size: 14px;
-}
-
 form [type="submit"] {
     display: block;
     background-color: #5568FE;
