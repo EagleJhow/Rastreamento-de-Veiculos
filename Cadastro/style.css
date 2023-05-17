@@ -20,7 +20,7 @@ body{
     background-color: black;
     border-radius: 10px;
     width: 355px;
-    height: 355px;
+    height: 405px;
     padding: 35px;
 }
 
@@ -61,6 +61,7 @@ form [type="submit"] {
 
 p{
     color: #CBD0F7;
+	margin-top: 10px;
 }
 
 a{

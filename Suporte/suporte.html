@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/suporte.png" type="image/x-icon">
+    <title>Suporte</title>
+</head>
+<body>
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+		</div>
+			<nav class="menu">
+				
+                <a href="/Cadastro de Veiculos/CadastroVeiculos.html">Cadastro Veiculos
+                </a>
+				<a href="/Pagina ADM/Adm.html">Adiministração Veiculos</a>
+				
+                <a href="/Suporte/suporte.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                  </svg>
+                </a>
+                
+                <a href="/Login/Login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </a>
+			</nav>
+		</div>
+	</header>
 
-    <body>
-    <fieldset><legend>Entre em Contato</legend>
-        <span>
-            <strong>Assunto:</strong>
-        </span>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
 
-        <select name="Reclamações" id="">
-            <option value="">Suporte</option>
-            <option value="">Sugestão</option>
-            <option value="">Reclamação</option>
-        </select>
-        <br><br>
-        <legend><strong>Nome completo: </strong></legend>
-        <input placeholder="Seu nome" type="text">
-        <br><br>
-        <legend><strong>E-mail:</strong></legend>
-        <input placeholder="Seu email@seudominio.com" type="email">
-        <br><br>
-        <legend><strong>Mensagem:</strong></legend>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br><br>
-        <input type="checkbox">Aceito receber novidades por e-mail 
-    </fieldset>
-    
-    
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/Suporte/obrigado.html">
+        </form>
+    </section>
 </body>
 </html>
