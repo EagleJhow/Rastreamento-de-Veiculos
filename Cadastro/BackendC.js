@@ -1,20 +1,20 @@
-const formCadastro = document.querySelector('form');
+const formLogin = document.querySelector('form');
 
-formCadastro.addEventListener('submit', (event) => {
+formLogin.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const nome = formCadastro.querySelector('input[name="nome"]').value;
-  const senha = formCadastro.querySelector('input[name="senha"]').value;
-  const confirmarSenha = formCadastro.querySelector('input[name="confirmar-senha"]').value;
+  const nome = formLogin.querySelector('input[name="nome"]').value;
+  const senha = formLogin.querySelector('input[name="senha"]').value;
 
-  if (senha !== confirmarSenha) {
-    alert('As senhas informadas não conferem');
+  const nomeCadastrado = localStorage.getItem('nome');
+  const senhaCadastrada = localStorage.getItem('senha');
+
+  if (nome !== nomeCadastrado || senha !== senhaCadastrada) {
+    alert('Nome de usuário ou senha inválidos');
     return;
   }
 
-  localStorage.setItem('nome', nome);
-  localStorage.setItem('senha', senha);
-
-  alert('Cadastro realizado com sucesso!');
-  formCadastro.reset();
+  alert('Login realizado com sucesso!');
+  formLogin.reset();
+  window.location.href = '/Cadastro de Veiculos/index.html';
 });

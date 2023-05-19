@@ -16,10 +16,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    justify-content: center;
+    align-items: center;
 }
 
 .form-image {
