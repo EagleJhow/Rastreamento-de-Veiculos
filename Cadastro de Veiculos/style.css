@@ -22,19 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;
-    padding: 1rem;
-}
-
-.form-image img {
-    width: 31rem;
+    color: #CBD0F7;
 }
 
 .form {
@@ -43,7 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: black;
     padding: 3rem;
 }
 
@@ -107,6 +95,7 @@ body {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
+    background: #252A34;
 }
 
 .input-box input:hover {
@@ -121,7 +110,7 @@ body {
 .gender-title h6 {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #000000c0;
+    color: #CBD0F7;
 }
 
 .input-box input::placeholder {
@@ -209,3 +198,68 @@ body {
         margin-top: 0.5rem;
     }
 }
+
+
+/* //////////////// */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.containerr{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.containerr .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.containerr .btn-menu label{
+		color: #CBD0F7;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #CBD0F7;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.containerr .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.containerr .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #CBD0F7;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.containerr .menu a:hover{
+		border-bottom: 2px solid #CBD0F7;
+		padding-bottom: 5px;
+	}

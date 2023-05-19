@@ -7,9 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/img/CadastrodeVeiculoslogo.png" type="image/x-icon">
-    <title>Formulário</title>
+    <title>Cadastro de Veiculos</title>
 </head>
 <body>
+
+    <header class="header">
+		<div class="containerr">
+		<div class="btn-menu">
+		</div>
+			<nav class="menu">
+				
+                <a href="/Cadastro de Veiculos/CadastroVeiculos.html">Cadastro Veiculos
+                </a>
+				<a href="/Pagina ADM/Adm.html">Adiministração Veiculos</a>
+				
+                <a href="/Suporte/suporte.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                  </svg>
+                </a>
+                
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </a>
+			</nav>
+		</div>
+	</header>
 
     <div class="container">
         <div class="form">
@@ -23,6 +48,12 @@
                         <label for="email">Nome do Condutor</label>
                         <input id="email" type="text" name="email" placeholder="Digite seu Nome" required>
                     </div>
+
+                    <div class="input-box">
+                        <label for="email">Placa do Veículo</label>
+                        <input id="email" type="text" name="email" placeholder="Digite a placa do veículo" required>
+                    </div> 
+
                     <div class="input-box">
                         <label for="firstname">Data</label>
                         <input id="firstname" type="date" name="firstname" placeholder="" required>
@@ -36,11 +67,6 @@
                     <div class="input-box">
                         <label for="lastname">Hora da Chegada</label>
                         <input id="lastname" type="time" name="lastname" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">Placa do Veículo</label>
-                        <input id="email" type="text" name="email" placeholder="Digite a placa do veículo" required>
                     </div>
 
                     <div class="input-box">
@@ -64,8 +90,13 @@
                     </div>
 
                     <div class="input-box">
+                        <label for="confirmPassword">Local de Saída</label>
+                        <input id="confirmPassword" type="text" name="confirmPassword" placeholder="Digite o local de saída" required>
+                    </div>
+
+                    <div class="input-box">
                         <label for="confirmPassword">Local de Destino</label>
-                        <input id="confirmPassword" type="text" name="confirmPassword" placeholder="Local de Destino" required>
+                        <input id="confirmPassword" type="text" name="confirmPassword" placeholder="Digite o local de destino" required>
                     </div>
 
                 </div>
