@@ -33,17 +33,20 @@ body {
     align-items: center;
     background-color: black;
     padding: 3rem;
+
 }
 
 .form-header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 .login-button {
     display: flex;
     align-items: center;
+
 }
 
 .login-button button {
@@ -52,10 +55,12 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .login-button button:hover {
     background-color: #6b63fff1;
+
 }
 
 .login-button button a {
@@ -73,6 +78,7 @@ body {
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+    
 }
 
 .input-group {
@@ -80,13 +86,16 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+    color: #CBD0F7;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    color: #CBD0F7;
 }
+
 
 .input-box input {
     margin: 0.6rem 0;
@@ -114,7 +123,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color: #000000be;
+    color: #CBD0F7;
 }
 
 .gender-group {
