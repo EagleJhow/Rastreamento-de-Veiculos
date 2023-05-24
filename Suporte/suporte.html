@@ -36,18 +36,15 @@
 	</header>
 
     <section>
-        <h2>Suporte</h2>
+        <h2>ENVIE SUA DÚVIDA</h2>
         <form action="https://api.staticforms.xyz/submit" method="post">
-            <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-            <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <input type="text" name="name" placeholder="Nome" class="contato" autocomplete="off" required>
+            <input type="email" name="email" placeholder="Email" class="contato" autocomplete="off" required>
+            <input type="number" name="telefone" placeholder="Telefone" class="contato" autocomplete="off" required>
+            <input type="text" name="assunto" placeholder="Assunto" class="contato" autocomplete="off" required>
+            <textarea type="text" name="message" cols="30" rows="10" class="contato" placeholder="Dúvida" required></textarea>
+            <button type="submit" class="contatoEnviar">Enviar</button>
 
-            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/Suporte/obrigado.html">
         </form>
     </section>
 </body>
