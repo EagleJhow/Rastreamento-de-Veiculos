@@ -18,7 +18,7 @@ body{
     background: black;
     border-radius: 10px;
     width: 356px;
-    height: 355px;
+    height: 385px;
     padding: 35px;
 }
 
@@ -65,7 +65,33 @@ p{
 
 a{
     color: #5568FE;
+}
+
+.recuperacao{
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button button a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
 }
 
 /* Parte do Menu */
