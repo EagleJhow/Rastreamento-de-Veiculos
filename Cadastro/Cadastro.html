@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-	<title>Cadastro</title>
-	<link rel="stylesheet" type="text/css" href="/Cadastro/Cadastro.css">
-    <script type="text/javascript" src="/Cadastro/Cadastro.js"></script>
-	<link rel="shortcut icon" href="/img/CadastrodeVeiculoslogo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Cadastro/Cadastro.css">
+    <link rel="shortcut icon" href="/img/CadastrodeVeiculoslogo.png" type="image/x-icon">
+	<script src="/Cadastro/Cadastro.js"></script>
+    <title>Cadastro de Veiculos</title>
 </head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="containerr">
 		<div class="btn-menu">
 		</div>
 			<nav class="menu">
@@ -22,7 +26,7 @@
                   </svg>
                 </a>
                 
-                <a href="/Login/Login.html">
+                <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
@@ -32,19 +36,69 @@
 		</div>
 	</header>
 
-	<div class="area-login">
-		<div class="login">
-			<img src="/img/CadastrodeVeiculoslogo.png">
-			<form id="cadastro-form">
-				<input type="text" id="nome" placeholder="Usuário" autocomplete="off" required>
-				<input type="password" id="senha" placeholder="Senha" autocomplete="off" required>
-				<input type="password" id="confirmar-senha-input" placeholder="Confirme a Senha" autocomplete="off" required>
-				<div class="continue-button">
-                    <button><a href="/Login/Login.html">Cadastrar</a> </button>
+    <div class="container">
+        <div class="form">
+            <section>
+            <form action="formulario">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastrar-se</h1>
+
+                        <h3> Dados Pessoais</h3>
+                  <div class="input-group">
+                    <div class="input-box">
+                        <input id="nome" type="text" name="nome" placeholder="Nome" class="Cadastro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input id="nome" type="text" name="nome" placeholder="Usuário" class="Cadastro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input id="placa" type="password" name="placa" placeholder="Senha" class="Cadastro" required>
+                    </div>
+
                 </div>
-			</form>
-			<p>Já possui uma conta? <a href="/Login/Login.html">Faça login</a></p>
-		</div>
-	</div>
+
+                <h3> Endereço </h3>
+                  <div class="input-group">
+                    <div class="endereco">
+                        <input id="nome" type="text" name="nome" placeholder="Rua" class="Cadastro" required>
+                    </div>
+
+                    <div class="endereco">
+                        <input id="placa" type="number" name="placa" placeholder="Número" class="Cadastro" required>
+                    </div> 
+
+                    <div class="endereco">
+                        <input id="data" type="text" name="data" placeholder="Bairro" class="Cadastro" required>
+                    </div>
+
+                    <div class="endereco">
+                        <input id="horaS" type="text" name="horaS" placeholder="Complemento" class="Cadastro" required>
+                    </div>
+
+                    <div class="endereco">
+                        <input id="horaC" type="text" name="horaC" placeholder="Cidade" class="Cadastro" required>
+                    </div>
+
+                    <div class="endereco">
+                        <input id="marca" type="text" name="marca" placeholder="Estado" class="Cadastro" required>
+                    </div>
+
+                    <div class="endereco">
+                        <input id="modelo" type="number" name="modelo" placeholder="CEP" class="Cadastro" required>
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Salvar</a> </button>
+                </div>
+            </form>
+        </section>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,76 +1,182 @@
-body{
-    background-color: #1B1F27;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.area-login{
+body {
+    width: 100%;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    background: #1B1F27;
 }
 
-.login{
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+h1{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CBD0F7;
+    padding: 0.5em ;
+}
+
+.form {
+    width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: black;
-    border-radius: 10px;
-    width: 355px;
-    height: 405px;
-    padding: 35px;
+    padding: 5em;
+    border-radius: 12px;
 }
 
-.login form{
+.formulario{
+    text-align: center  ;
+}
+
+.form-header {
+    margin-bottom: 3rem;
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.login input{
-    margin-top: 10px;
-    background-color: #252A34;
-    padding-left: 10px;
-    color: #CBD0F7;
+.login-button {
+    display: flex;
+    align-items: center;
+
+}
+
+.login-button button {
     border: none;
-    height: 45px;
-    outline: none;
-    border-radius: 8px;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.login img{
-    width: 105px;
-    height: auto;
+.login-button button:hover {
+    background-color: #6b63fff1;
+
 }
 
-input::placeholder{
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
     color: #CBD0F7;
-    font-size: 14px;
 }
 
-form [type="submit"] {
+.input-box input {
+    margin-left: 1em;
+    width: 110%;
+    padding: 1.5em;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: #252A34;
+    color: #CBD0F7;
     display: block;
-    background-color: #5568FE;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
-p{
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
     color: #CBD0F7;
-	margin-top: 10px;
 }
 
-a{
-    color: #5568FE;
+.input-box input::placeholder {
+    color: #CBD0F7;
+}
+
+.endereco input {
+    margin: 1em ;
+    margin-left: 1em;
+    width: 110%;
+    padding: 1.5em;
+    border: none;
+    border-radius: 23px;
+    font-size: 0.8rem;
+    background: #252A34;
+    color: #CBD0F7;
+    display: flex;
+}
+
+.endereco input:hover {
+    background-color: #eeeeee75;
+}
+
+.endereco input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.endereco input::placeholder {
+    color: #CBD0F7;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
 }
 
 .continue-button button {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 2.5rem;
     border: none;
     background-color: #6c63ff;
     padding: 0.62rem;
@@ -84,10 +190,53 @@ a{
 
 .continue-button button a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
 }
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* Parte do Menu */
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
@@ -112,16 +261,16 @@ a{
 		position: fixed;
 		top: 0;left: 0;
 	}
-	.container{
+	.containerr{
 		width: 90%;
 		max-width: 1200px;
 		margin: auto;
 	}
-	.container .btn-menu, .logo{
+	.containerr .btn-menu, .logo{
 		float: left;
 		line-height:100px;
 	}
-	.container .btn-menu label{
+	.containerr .btn-menu label{
 		color: #CBD0F7;
 		font-size: 25px;
 		cursor: pointer;
@@ -132,11 +281,11 @@ a{
 		font-size: 22px;
 		margin-left: 10px;
 	}
-	.container .menu{
+	.containerr .menu{
 		float: right;
 		line-height: 100px;
 	}
-	.container .menu a{
+	.containerr .menu a{
 		display: inline-block;
 		padding: 15px;
 		line-height: normal;
@@ -147,7 +296,7 @@ a{
 		font-size: 15px;
 		margin-right: 5px;
 	}
-	.container .menu a:hover{
+	.containerr .menu a:hover{
 		border-bottom: 2px solid #CBD0F7;
 		padding-bottom: 5px;
 	}
