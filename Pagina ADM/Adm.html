@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,54 +7,79 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/Pagina ADM/Adm.css">
     <link rel="shortcut icon" href="/img/CadastrodeVeiculoslogo.png" type="image/x-icon">
-    <script type="text/javascript" src="/Pagina ADM/Adm.js"></script>
     <title>Controle de veiculos</title>
 </head>
 <body>
     <header class="header">
-		<div class="containerr">
-		<div class="btn-menu">
-		</div>
-			<nav class="menu">
-				
-                <a href="/Cadastro de Veiculos/CadastroVeiculos.html">Cadastro Veiculos
-                </a>
-				<a href="/Pagina ADM/Adm.html">Adiministração Veiculos</a>
-				
+        <div class="containerr">
+            <div class="btn-menu">
+            </div>
+            <nav class="menu">
+                <a href="/Pagina ADM/Adm.html">Adiministração Veiculos</a>
                 <a href="/Suporte/suporte.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
                     <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
                   </svg>
                 </a>
-                
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </a>
-			</nav>
-		</div>
-	</header>
-<section>
-    <div  class="container">
-        <div class="row mt-5" v-if="mostrarTabela" >
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-12">
+                <form id="formVeiculo">
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <input type="number" class="form-control" id="inputId" placeholder="ID">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="date" class="form-control" id="inputData" placeholder="Data">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="inputPlaca" placeholder="Placa">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="number" class="form-control" id="inputHorarioSaida" placeholder="Horário de Saída">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="number" class="form-control" id="KmRodado" placeholder="Km Rodado">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-3">
             <div class="col-sm-12 col-md-12">
                 <table id="myTable" class="table striped table-striped table-hover table-sm table-responsive-sm">
                     <thead class="thead-dark">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Data</th>
-                        <th>Horario Saida</th>
-                        <th>Horario Chegada</th>
-                        <th>Placa</th>
-                        <th>Km Saída</th>
-                        <th>Km Rodado</th>
-                    </tr>
-                  </thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Data</th>
+                            <th>Placa</th>
+                            <th>Horário de Saída</th>
+                            <th>Km Rodado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
                 </table>
             </div>
         </div>
-</section>
-        
+    </div>
+
+    <script type="text/javascript" src="/Pagina ADM/Adm.js"></script>
 </body>
 </html>
