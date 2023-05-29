@@ -17,7 +17,7 @@ body{
     align-items: center;
     background: black;
     border-radius: 10px;
-    width: 356px;
+    width: 385px;
     height: 385px;
     padding: 35px;
 }
@@ -92,6 +92,22 @@ a{
     font-size: 20px;
     font-weight: 500;
     color: #fff;
+}
+
+
+.mostrar {
+	width: 12%;
+    margin-top: 10px;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+	height: 45px;
+}
+
+.senha{
+	width: 86%;
 }
 
 /* Parte do Menu */
