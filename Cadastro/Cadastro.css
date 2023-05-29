@@ -300,3 +300,19 @@ h1{
 		border-bottom: 2px solid #CBD0F7;
 		padding-bottom: 5px;
 	}
+
+
+    .mostrar {
+        width: 12%;
+        margin-top: 10px;
+        border: none;
+        background-color: #6c63ff;
+        padding: 0.62rem;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 45px;
+    }
+    
+    .senha{
+        width: 86%;
+    }

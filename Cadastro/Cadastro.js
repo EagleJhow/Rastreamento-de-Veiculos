@@ -18,3 +18,13 @@ formLogin.addEventListener('submit', (event) => {
   formLogin.reset();
   window.location.href = '/Cadastro de Veiculos/index.html';
 });
+
+
+function mostrarSenha(){
+  var tipo = document.getElementById("senha");
+  if(tipo.type == "password"){
+    tipo.type = "text";
+  }else{
+    tipo.type = "password";
+  }
+}
