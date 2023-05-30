@@ -235,6 +235,43 @@ h1{
 }
 
 
+
+.input-senha input {
+    margin-left: 1em;
+    width: 75%;
+    padding: 1.5em;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: #252A34;
+    color: #CBD0F7;
+    display: block;
+    float: left;
+}
+
+.input-senha input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-senha input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-senha input::placeholder {
+    color: #CBD0F7;
+}
+
+.mostrar{
+    width: 20%;
+    height: 55px;
+    padding: 1.5em;
+    border: none;
+    border-radius: 20px;
+    background: #6c63ff;
+    display: block;
+    cursor: pointer;
+}
+
 /* Parte do Menu */
 
 
@@ -301,18 +338,4 @@ h1{
 		padding-bottom: 5px;
 	}
 
-
-    .mostrar {
-        width: 12%;
-        margin-top: 10px;
-        border: none;
-        background-color: #6c63ff;
-        padding: 0.62rem;
-        border-radius: 10px;
-        cursor: pointer;
-        height: 45px;
-    }
     
-    .senha{
-        width: 86%;
-    }
